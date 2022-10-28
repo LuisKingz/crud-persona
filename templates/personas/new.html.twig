@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Registro
+{% endblock %}
+
+{% block body %}
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h1>Registro de Nueva Persona</h1>
+
+			{{ include('personas/_form.html.twig') }}
+
+			<a class="btn btn-info mt-2" href="{{ path('app_personas_index') }}">Regresar</a>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+
+{% endblock %}

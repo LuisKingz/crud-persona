@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Actualizar Datos
+{% endblock %}
+
+{% block body %}
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h1>Editar Datos</h1>
+
+			{{ include('personas/_form.html.twig', {'button_label': 'actualizar'}) }}
+
+			<a class="btn btn-info mt-2 mb-2" href="{{ path('app_personas_index') }}">Regresar</a>
+
+			{{ include('personas/_delete_form.html.twig') }}
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+{% endblock %}
